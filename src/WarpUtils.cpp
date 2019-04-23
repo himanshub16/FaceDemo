@@ -175,7 +175,7 @@ Mat CWarpUtils::EstimateHWeighted( PointSetd _pnt1, PointSetd _pnt2, bool _flag 
 
 Mat CWarpUtils::LoadMeanPnts3D( string _path ) {
 	ifstream fin(_path.c_str());
-	if (fin != NULL) {
+	if (fin.good()) {
 		Mat landmark = Mat::zeros(Size(3, 9), CV_64FC1); 
 		FOR (i, 9) {
 			double x, y, z; //= 0; 
