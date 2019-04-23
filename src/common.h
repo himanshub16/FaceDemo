@@ -17,6 +17,9 @@
 #include <GL/glut.h>
 #include <GL/glu.h>
 
+// required for CPP based opencv
+#include <opencv2/opencv.hpp>
+
 //logging
 #include "log.hpp"
 //include OpenCV 
